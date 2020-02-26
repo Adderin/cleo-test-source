@@ -65,7 +65,7 @@ export const Repos = () => {
   };
 
   const onSortByStars = event => {
-    if (checkBox.current.checked) {
+    if (event.target.checked) {
       setReposToDisplay(sortByStars(reposToDisplay));
     }
   };
